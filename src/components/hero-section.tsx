@@ -1,8 +1,15 @@
-
-import { ArrowRight, Github, Linkedin, Mail, Phone } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, Mail, Phone, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function HeroSection() {
+  const handleResumeDownload = () => {
+    // Create a link element and trigger download
+    const link = document.createElement('a');
+    link.href = '/Omkar_Mishra_Resume.pdf'; // Assuming resume is in public folder
+    link.download = 'Omkar_Mishra_Resume.pdf';
+    link.click();
+  };
+
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center pt-16 section-padding">
       <div className="container mx-auto px-4">
@@ -28,6 +35,14 @@ export default function HeroSection() {
               </Button>
               <Button variant="outline" asChild>
                 <a href="#projects">View Projects</a>
+              </Button>
+              <Button 
+                variant="secondary" 
+                onClick={handleResumeDownload}
+                className="group"
+              >
+                Download Resume
+                <Download className="ml-2 h-4 w-4 group-hover:animate-slide-right" />
               </Button>
             </div>
             
