@@ -87,11 +87,12 @@ export default function HeroSection() {
               <div className="w-72 h-72 rounded-full bg-gradient-to-r from-primary/20 to-primary/40 absolute -top-10 -right-10 blur-3xl z-0"></div>
               <div className="relative z-10 bg-card rounded-2xl shadow-xl p-8 border border-border">
                 <div className="h-56 w-56 mx-auto mb-6 overflow-hidden rounded-full border-4 border-primary/30">
-                  <img
-                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&ixlib=rb-4.0.3"
-                    alt="Omkar Mishra"
-                    className="object-cover w-full h-full"
-                  />
+                <img
+  src="/profile.png"
+  alt="Omkar Mishra"
+  className="w-full h-full object-cover rounded-full mx-auto"
+/>
+
                 </div>
                 <div className="text-center">
                   <h3 className="text-xl font-heading font-bold">Omkar Mishra</h3>
